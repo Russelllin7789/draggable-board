@@ -1,5 +1,7 @@
+import TrelloBoard from './components/TrelloBoard.vue';
+
 <template>
   <div>
-    <NuxtWelcome />
+    <TrelloBoard />
   </div>
 </template>
