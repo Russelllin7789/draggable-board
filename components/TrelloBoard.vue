@@ -3,7 +3,7 @@ import draggable from "vuedraggable";
 import type { Column, Task } from "../types/index";
 import { nanoid } from "nanoid";
 
-const columns = ref<Column[]>([
+const columns = useLocalStorage<Column[]>("trello-board", [
   {
     id: nanoid(),
     title: "Backlog",
