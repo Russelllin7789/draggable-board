@@ -57,8 +57,8 @@ const alt = useKeyModifier("Alt");
       group="columns"
       item-key="id"
       class="flex gap-4 overflow-x-auto items-start"
-      ghost-class="opacity-30"
       :animation="150"
+      ghost-class="opacity-30"
       handle=".drag-handle"
     >
       <template #item="{ element: column }: { element: Column }">
@@ -72,11 +72,12 @@ const alt = useKeyModifier("Alt");
             :group="{ name: 'tasks', pull: alt ? 'clone' : true }"
             item-key="id"
             handle=".drag-handle"
-            ghost-class="opacity-30"
             :animation="150"
           >
             <template #item="{ element: task }: { element: Task }">
-              <BoardTask :task="task" />
+              <div>
+                <BoardTask :task="task" />
+              </div>
             </template>
           </draggable>
           <footer>
