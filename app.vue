@@ -1,7 +1,5 @@
-import TrelloBoard from './components/TrelloBoard.vue';
-
 <template>
-  <div>
+  <div class="p-10 h-[100vh] bg-teal-600 overflow-auto">
     <TrelloBoard />
   </div>
 </template>
